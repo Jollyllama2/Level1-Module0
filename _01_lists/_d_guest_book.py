@@ -7,11 +7,12 @@ import tkinter as tk
 
 # TODO 1) Complete the function by:
 #         a. Asking for the name of the guest to add
+Ice_breakwer =simpledialog.askstring(title= 'BROOOOO', prompt= "Como te llamas, whats ur name")
 #         b. Add the guest to list_of_guests
 #         c. Return the list_of_guests
 def add_guest(list_of_guests):
 
-    return list()
+    return list(Ice_breakwer)
 
 # TODO 2) Complete the function by:
 #         a. Asking for the name of the guest to remove

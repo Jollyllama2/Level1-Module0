@@ -4,11 +4,26 @@ Find the crow that ate the diamond!
 import random
 
 
+
+
 def find_the_diamond(the_murder=None):
-    pass
+
+    Rizz_Skibidi = 0
+    for item in the_murder:
+        Rizz_Skibidi = Rizz_Skibidi + 1
+        if item == 'Diamond':
+            print('caught')
+        for Almond_butter in item.stomach_contents:
+            if Almond_butter == "diamond":
+                print(item.name)
+                print("we killed " + str(Rizz_Skibidi) + "birds ")
+
+
+
     # TODO 1) One of the Crows has eaten the diamond. You need to search
     #  through the stomach of each Crow, then print the name of the
     #  guilty Crow. The input parameter contains the list of Crow objects.
+
 
     # TODO 2) How many innocent crows had to die before the diamond was found?
     #  For example, if you had to look through the stomachs of 3 crows to find
@@ -45,7 +60,7 @@ def initialize_crows():
     crows.append(Crow("Rok"))
     crows.append(Crow("Merle"))
     crows.append(Crow("Poe"))
-    crows.append(Crow("Grenwyn"))
+    crows.append(Crow("Greenery"))
     crows.append(Crow("Crawford"))
 
     # Hide the diamond
@@ -55,6 +70,10 @@ def initialize_crows():
     return crows
 
 
+
 if __name__ == '__main__':
     murder_of_crows = initialize_crows()
     find_the_diamond(murder_of_crows)
+
+
+
