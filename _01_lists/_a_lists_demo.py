@@ -43,6 +43,7 @@ if __name__ == '__main__':
     my_item = my_list[4]
     print('The item at index 4 is: ' + str(my_item))
 
+
     # Changing an item in a list
     my_list[4] = 'CHANGED!'
     my_item = my_list[4]

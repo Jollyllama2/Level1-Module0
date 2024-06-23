@@ -7,12 +7,12 @@ import tkinter as tk
 
 # TODO 1) Complete the function by:
 #         a. Asking for the name of the guest to add
-Ice_breakwer =simpledialog.askstring(title= 'BROOOOO', prompt= "Como te llamas, whats ur name")
+
 #         b. Add the guest to list_of_guests
 #         c. Return the list_of_guests
 def add_guest(list_of_guests):
-
-    return list(Ice_breakwer)
+    Ice_breaker  = simpledialog.askstring(title='BROOOOO', prompt='whats ur name')
+    return list_of_guests
 
 # TODO 2) Complete the function by:
 #         a. Asking for the name of the guest to remove
@@ -20,6 +20,9 @@ def add_guest(list_of_guests):
 #            the guest isn't in the list.
 #         c. Return the list_of_guests
 def remove_guest(list_of_guests):
+    Albert = simpledialog.askstring( title= 'hi', prompt= 'what name do you want removed' )
+    if Albert == Ice_breaker:
+        list_of_guests.remove(Albert)
 
     return list()
 
@@ -30,6 +33,7 @@ def remove_guest(list_of_guests):
 #            Guest 3. Jin
 #         b. If there are no guests, print "There are no guests"
 def print_guests(list_of_guests):
+    print(['Luke', 1 ,3])
     pass
 
 # ======================= DO NOT EDIT THE CODE BELOW =========================
