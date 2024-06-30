@@ -5,20 +5,36 @@ import unittest
 
 # TODO: 1) Implement the functions below so that the test cases in the string
 #  methods test file pass. You can delete the 'pass' instruction.
-#
+
 # TODO: 2) Run the string test file. A summary of the test results on your
 #  code will be displayed. Fix any problems in your code so that all the
 #  tests pass.
 
 # Given Strings s1 and s2, return the longer String
 def find_longer_string(s1, s2):
+    num_characters = len(s1)
+    num_characters2 = len(s2)
 
-    return None
+    if num_characters < num_characters2:
+
+        return s2
+
+    if num_characters > num_characters2:
+        return s1
+
+    if num_characters == num_characters2:
+        return s1
 
 
 # If String s contains the word "underscores", change all of the spaces to
 # underscores
 def format_spaces(s1):
+    index = s1.find('underscore')
+    if index > 0:
+        back_to_string = s1.replace(' ', '_')
+
+        return s1
+
 
     return None
 
