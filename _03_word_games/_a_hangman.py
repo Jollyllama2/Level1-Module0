@@ -7,7 +7,7 @@ from tkinter import messagebox
 #  word_to_guess = orange (a string)
 #  return          ______ (a string with 6 underscores)
 def setup_new_word(word_to_guess):
-
+    index =
     return str()
 
 # TODO 2) Complete the function to return whether the letter is in

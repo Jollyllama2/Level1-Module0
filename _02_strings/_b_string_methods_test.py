@@ -29,25 +29,32 @@ def find_longer_string(s1, s2):
 # If String s contains the word "underscores", change all of the spaces to
 # underscores
 def format_spaces(s1):
+
+    format_spaces = s1
     index = s1.find('underscore')
-    if index > 0:
-        back_to_string = s1.replace(' ', '_')
-
-        return s1
+    if index > -1:
+        format_spaces = s1.replace(' ', '_')
 
 
-    return None
+    return format_spaces
+
+
+
 
 
 # Return the number of times String substring appears in String s
 def substring_count(s, substring):
+    substring_count = s.count(substring)
 
-    return None
+    return substring_count
+
+
 
 
 # Return true if String s is a palindrome
 # palindromes are words or phrases are read the same forward as backward.
 def palindrome(s):
+   s_backward = s[:]
 
     return None
 

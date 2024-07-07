@@ -5,20 +5,27 @@ import unittest
 
 
 # TODO Complete the function so it returns a list of any 5 items
-def huh():
-    return None
+def test_1_create_a_list():
+    the_lest = list('o' 'n' 'w' 'g' 'm')
+    return the_lest
+
 
 
 # TODO Complete the function so it returns a list of numbers from 0 to 20
 #  with both numbers 0 and 20 included in the list
 def test_2_generate_a_list():
-    return list()
+    the_lest = (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20)
+    return the_lest
 
 
 # TODO Complete the function so it returns the product of all the numbers in
 #  the list multiplied together
 def test_3_product(list_1):
-    return None
+    the_lest = len(list_1)
+    for index in range(the_lest):
+        print(index, list_1[index],end=';' )
+
+    return the_lest
 
 
 # TODO Complete the function so it returns a list with all the elements from
